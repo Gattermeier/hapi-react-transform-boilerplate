@@ -1,4 +1,4 @@
-var webpack = require('webpack');
+const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
@@ -10,8 +10,8 @@ module.exports = {
     './src/index.js'
   ],
   output: {
-    path:       path.join(__dirname, 'client/public/dist'),
-    filename:   'bundle.js',
+    path: path.join(__dirname, 'client/public/dist'),
+    filename: 'bundle.js',
     publicPath: '/dist'
   },
   plugins: [
